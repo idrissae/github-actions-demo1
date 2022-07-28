@@ -1,0 +1,15 @@
+name:  demo 1
+
+on: [push]
+
+
+jobs:
+  run-shell-command: 
+    runs-on: ubuntu-18.04
+    steps:
+      - name: echo a string
+        run: echo "hi hi"
+      - name: multiline ccommands
+        run: |
+          python --version
+          pwd 
